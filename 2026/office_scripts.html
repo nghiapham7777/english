@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Office English Scripts</title>
+<style>
+  :root{
+    --paper:#f7f4ee;
+    --ink:#2b2a26;
+    --ink-soft:#6b6558;
+    --line:#d8d2c2;
+    --accent:#7a6a4f;
+    --accent-deep:#4c4230;
+    --tag:#eee7d6;
+    --white:#fffdf8;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"Georgia","Times New Roman",serif;
+    padding:48px 20px 80px;
+  }
+  .wrap{max-width:760px;margin:0 auto;}
+  header.page-head{
+    text-align:left;
+    margin-bottom:48px;
+    padding-bottom:24px;
+    border-bottom:2px solid var(--ink);
+  }
+  .eyebrow{
+    font-family:"Courier New",monospace;
+    font-size:12px;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    color:var(--accent);
+    margin-bottom:10px;
+  }
+  h1{
+    font-size:36px;
+    margin:0 0 8px;
+    letter-spacing:-0.5px;
+  }
+  .sub{
+    font-family:"Courier New",monospace;
+    font-size:13px;
+    color:var(--ink-soft);
+  }
+  .topic{
+    background:var(--white);
+    border:1px solid var(--line);
+    border-radius:2px;
+    margin-bottom:32px;
+    overflow:hidden;
+    box-shadow:0 1px 0 var(--line);
+  }
+  .topic-head{
+    display:flex;
+    align-items:baseline;
+    gap:14px;
+    padding:20px 24px;
+    border-bottom:1px solid var(--line);
+    background:linear-gradient(180deg,var(--white),#faf7ef);
+  }
+  .num{
+    font-family:"Courier New",monospace;
+    font-size:13px;
+    color:var(--accent);
+    border:1px solid var(--accent);
+    border-radius:50%;
+    width:26px;height:26px;
+    display:flex;align-items:center;justify-content:center;
+    flex-shrink:0;
+  }
+  .topic-head h2{
+    margin:0;
+    font-size:21px;
+    font-weight:normal;
+  }
+  .player{
+    padding:18px 24px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    background:#faf8f2;
+    border-bottom:1px solid var(--line);
+  }
+  .player audio{
+    width:100%;
+    height:36px;
+  }
+  .controls-row{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    flex-wrap:wrap;
+  }
+  .ctrl-btn{
+    font-family:"Courier New",monospace;
+    font-size:12px;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    padding:7px 14px;
+    border:1px solid var(--ink);
+    background:var(--white);
+    color:var(--ink);
+    border-radius:2px;
+    cursor:pointer;
+    transition:background .15s, color .15s;
+    text-decoration:none;
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+  }
+  .ctrl-btn:hover{
+    background:var(--ink);
+    color:var(--white);
+  }
+  .ctrl-btn.active{
+    background:var(--accent-deep);
+    color:var(--white);
+    border-color:var(--accent-deep);
+  }
+  .filehint{
+    font-family:"Courier New",monospace;
+    font-size:11px;
+    color:var(--ink-soft);
+    margin-left:auto;
+  }
+  .script{
+    padding:22px 24px 26px;
+  }
+  .script p{
+    margin:0 0 14px;
+    line-height:1.7;
+    font-size:15.5px;
+  }
+  .script p:last-child{margin-bottom:0;}
+  .script .tag{
+    display:inline-block;
+    font-family:"Courier New",monospace;
+    font-size:11px;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    background:var(--tag);
+    color:var(--accent-deep);
+    padding:2px 8px;
+    border-radius:2px;
+    margin-right:8px;
+    margin-bottom:4px;
+  }
+  footer.note{
+    margin-top:20px;
+    font-family:"Courier New",monospace;
+    font-size:12px;
+    color:var(--ink-soft);
+    line-height:1.6;
+    border-top:1px dashed var(--line);
+    padding-top:16px;
+  }
+  footer.note code{
+    background:var(--tag);
+    padding:1px 5px;
+    border-radius:2px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="page-head">
+    <div class="eyebrow">Office English &middot; Listening Scripts</div>
+    <h1>Morning to Meeting</h1>
+    <div class="sub">5 short scripts &middot; audio + repeat + download</div>
+  </header>
+
+  <!-- ================= TOPIC 1 ================= -->
+  <section class="topic" id="topic-1">
+    <div class="topic-head">
+      <span class="num">1</span>
+      <h2>Morning Office Routine</h2>
+    </div>
+    <div class="player">
+      <audio id="audio-1" controls src="audio/01-morning-office-routine.MP3"></audio>
+      <div class="controls-row">
+        <button class="ctrl-btn" data-repeat-for="audio-1">&#8635; Repeat: Off</button>
+        <a class="ctrl-btn" download href="audio/01-morning-office-routine.mp3">&#8681; Download</a>
+        <span class="filehint">audio/01-morning-office-routine.mp3</span>
+      </div>
+    </div>
+    <div class="script">
+      <p><span class="tag">Intro</span>Hello everyone, and welcome back. Today, we are going to learn some simple English to describe a morning office routine. Let's get started!</p>
+      <p><span class="tag">Arriving at the Office</span>Every morning, I arrive at my company. I walk through the main door and say "Good morning" to the receptionist. After that, I scan my fingerprint to check in. This records my arrival time. Then, I press the button and wait for the elevator to go up to my office.</p>
+      <p><span class="tag">Breakfast with a View</span>Sometimes, I arrive a little late. When this happens, I don't go straight to my desk. Instead, I go up to the top floor to have breakfast. The cafeteria is a beautiful space. It has a great view of the city and the river. It is very relaxing before a busy day.</p>
+      <p><span class="tag">Setting Up the Workspace</span>After breakfast, I walk to my desk. Now, it is time to set up my workspace. First, I open my laptop. Then, I plug in my external monitor for a bigger screen. I also connect the power cable, my wireless mouse, and my keyboard.</p>
+      <p><span class="tag">Getting Ready to Work</span>Finally, before I start working, I take out my notebook. I write down three things I need to do today. I organize these tasks from high priority to low priority. This simple habit helps me stay focused all day.</p>
+      <p><span class="tag">Outro</span>That is my morning office routine! What about you? What do you do when you first arrive at your office? Thank you for listening, and see you in the next episode!</p>
+    </div>
+  </section>
+
+  <!-- ================= TOPIC 2 ================= -->
+  <section class="topic" id="topic-2">
+    <div class="topic-head">
+      <span class="num">2</span>
+      <h2>Morning Office Routine &mdash; Short Version</h2>
+    </div>
+    <div class="player">
+      <audio id="audio-2" controls src="audio/02-morning-office-routine-short.mp3"></audio>
+      <div class="controls-row">
+        <button class="ctrl-btn" data-repeat-for="audio-2">&#8635; Repeat: Off</button>
+        <a class="ctrl-btn" download href="audio/02-morning-office-routine-short.mp3">&#8681; Download</a>
+        <span class="filehint">audio/02-morning-office-routine-short.mp3</span>
+      </div>
+    </div>
+    <div class="script">
+      <p><span class="tag">Intro</span>Welcome back. Today, let's learn some simple English to describe a morning office routine.</p>
+      <p><span class="tag">Arriving at the Office</span>Every morning, I arrive at my company. I walk through the main door and say "Good morning" to the receptionist. After that, I scan my fingerprint to check in. This records my arrival time. Then, I press the button and wait for the elevator to go up to my office.</p>
+      <p><span class="tag">Breakfast with a View</span>Sometimes, I arrive a little late. When this happens, I don't go straight to my desk. Instead, I go up to the top floor to have breakfast. The cafeteria is a beautiful space. It has a great view of the city and the river. It is very relaxing before a busy day.</p>
+      <p><span class="tag">Setting Up the Workspace</span>After breakfast, I walk to my desk. Now, it is time to set up my workspace. First, I open my laptop. Then, I plug in my external monitor for a bigger screen. I also connect the power cable, my wireless mouse, and my keyboard.</p>
+      <p><span class="tag">Getting Ready to Work</span>Finally, before I start working, I take out my notebook. I write down three things I need to do today. I organize these tasks from high priority to low priority. This simple habit helps me stay focused all day.</p>
+      <p><span class="tag">Outro</span>That is my morning routine! What do you do when you arrive at work? Thanks for listening, and see you next time!</p>
+    </div>
+  </section>
+
+  <!-- ================= TOPIC 3 ================= -->
+  <section class="topic" id="topic-3">
+    <div class="topic-head">
+      <span class="num">3</span>
+      <h2>The Water Cup on My Desk</h2>
+    </div>
+    <div class="player">
+      <audio id="audio-3" controls src="audio/03-water-cup-on-my-desk.mp3"></audio>
+      <div class="controls-row">
+        <button class="ctrl-btn" data-repeat-for="audio-3">&#8635; Repeat: Off</button>
+        <a class="ctrl-btn" download href="audio/03-water-cup-on-my-desk.mp3">&#8681; Download</a>
+        <span class="filehint">audio/03-water-cup-on-my-desk.mp3</span>
+      </div>
+    </div>
+    <div class="script">
+      <p><span class="tag">Intro</span>Welcome back. Today, let's talk about something very important on my desk: my water cup.</p>
+      <p><span class="tag">The Cup on the Desk</span>There is always a big cup on my desk. I put it right next to my laptop so I can see it easily. It is a very simple thing, but I use it every single day.</p>
+      <p><span class="tag">When and How to Use It</span>I use this cup to drink warm water or tea. I drink when I feel thirsty, of course. But I also take a sip of water when I need a short break. Looking at the computer screen for too long makes me tired, so drinking water helps me feel fresh again.</p>
+      <p><span class="tag">How Much Water to Drink</span>People say we should drink about two liters of water a day. That is about eight glasses. Because I spend most of my day at the office, I try to drink at least four or five full cups of water here. It keeps me healthy and gives me energy to work.</p>
+      <p><span class="tag">Outro</span>Drinking enough water is a simple but great habit. How much water do you drink at work? Thanks for listening, and see you next time!</p>
+    </div>
+  </section>
+
+  <!-- ================= TOPIC 4 ================= -->
+  <section class="topic" id="topic-4">
+    <div class="topic-head">
+      <span class="num">4</span>
+      <h2>Office Lunch Break and Nap Time</h2>
+    </div>
+    <div class="player">
+      <audio id="audio-4" controls src="audio/04-office-lunch-break-and-nap-time.mp3"></audio>
+      <div class="controls-row">
+        <button class="ctrl-btn" data-repeat-for="audio-4">&#8635; Repeat: Off</button>
+        <a class="ctrl-btn" download href="audio/04-office-lunch-break-and-nap-time.mp3">&#8681; Download</a>
+        <span class="filehint">audio/04-office-lunch-break-and-nap-time.mp3</span>
+      </div>
+    </div>
+    <div class="script">
+      <p><span class="tag">Intro</span>Hello everyone, Welcome back. Today, let's explore what we usually do during our office lunch break.</p>
+      <p><span class="tag">Going Out for Lunch</span>At lunchtime, we have many food choices. Usually, we eat rice because it makes us full and helps us save money. But sometimes, we want to try different dishes. The restaurants are a bit far from our office, so we have to drive or ride our motorbikes to get there.</p>
+      <p><span class="tag">Bringing Lunch from Home</span>Some of my coworkers choose not to go out. They bring their own lunch boxes from home. This is a great way to save money, eat healthy food, and make sure the food is clean. Plus, they have a lot more time to rest.</p>
+      <p><span class="tag">Coffee or Napping?</span>After eating, we sometimes go to a cafe to chat and relax. However, most of the time, we spend our remaining break time taking a nap.</p>
+      <p><span class="tag">The Importance of Taking a Nap</span>Taking a nap is very important to me. Just a short sleep of 15 to 30 minutes helps us recharge our energy and focus on our work in the afternoon. We even have personal lockers at the company. I keep my sleeping items, like a small pillow and blanket, in my locker. This helps me have a very good and deep sleep.</p>
+      <p><span class="tag">Outro</span>That is my lunch routine! Do you prefer going out for lunch or bringing your own food? Thanks for listening, and catch you in the next episode!</p>
+    </div>
+  </section>
+
+  <!-- ================= TOPIC 5 ================= -->
+  <section class="topic" id="topic-5">
+    <div class="topic-head">
+      <span class="num">5</span>
+      <h2>Weekly Team Meeting</h2>
+    </div>
+    <div class="player">
+      <audio id="audio-5" controls src="audio/05-weekly-team-meeting.mp3"></audio>
+      <div class="controls-row">
+        <button class="ctrl-btn" data-repeat-for="audio-5">&#8635; Repeat: Off</button>
+        <a class="ctrl-btn" download href="audio/05-weekly-team-meeting.mp3">&#8681; Download</a>
+        <span class="filehint">audio/05-weekly-team-meeting.mp3</span>
+      </div>
+    </div>
+    <div class="script">
+      <p><span class="tag">Intro</span>Hi everyone, Welcome back. Today, we are going to talk about a very common office activity: the weekly team meeting. Let's begin!</p>
+      <p><span class="tag">Booking the Meeting Room</span>Every week, my team has a regular meeting. Because our company does not have many meeting rooms, I always have to prepare early. I use the company system to find and book a room at least two days in advance. If I forget, we won't have a place to meet!</p>
+      <p><span class="tag">Checking Project Status</span>During the meeting, the first thing we do is talk about our projects. We share what we finished this week. We check if the work is on time or late. If someone has a problem, everyone listens and tries to help.</p>
+      <p><span class="tag">Planning for Next Week</span>After checking the projects, we make a plan for the next week. We look at our goals and I assign new tasks to my team members. We want to make sure everyone knows exactly what to do.</p>
+      <p><span class="tag">Other Information and News</span>Finally, we spend time for other information. Sometimes, I share new company rules or updates from the management. Other times, we just talk about fun things, like planning a team dinner or celebrating a member's birthday. It is a great time to connect with each other.</p>
+      <p><span class="tag">Outro</span>Meetings help my team work better together. How often do you have meetings at your work? Thanks for listening, and see you in the next episode!</p>
+    </div>
+  </section>
+
+  <!-- <footer class="note">
+    File audio hiện đang được dẫn tới thư mục <code>audio/</code> cùng cấp với file HTML này (ví dụ: <code>audio/01-morning-office-routine.mp3</code>).
+    Khi có link folder thật, chỉ cần thay giá trị <code>src</code> trong thẻ <code>&lt;audio&gt;</code> và <code>href</code> trong nút Download bằng đường dẫn/URL tương ứng.
+    Nút <strong>Repeat</strong> bật/tắt chế độ lặp lại từng đoạn audio; nút <strong>Download</strong> tải file mp3 về máy.
+  </footer> -->
+
+</div>
+
+<script>
+  document.querySelectorAll('[data-repeat-for]').forEach(function(btn){
+    var audio = document.getElementById(btn.getAttribute('data-repeat-for'));
+    btn.addEventListener('click', function(){
+      audio.loop = !audio.loop;
+      btn.classList.toggle('active', audio.loop);
+      btn.innerHTML = audio.loop ? '&#8635; Repeat: On' : '&#8635; Repeat: Off';
+    });
+  });
+</script>
+
+</body>
+</html>
